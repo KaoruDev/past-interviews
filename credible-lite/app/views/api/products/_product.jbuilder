@@ -1,0 +1,1 @@
+json.(product, :id, :lender_id, :term, :apr, :min_credit_score, :min_income)

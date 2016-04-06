@@ -1,0 +1,4 @@
+.btn-action {
+  @include button-variant($text-color-inverse, $color-action, $color-action);
+}
+

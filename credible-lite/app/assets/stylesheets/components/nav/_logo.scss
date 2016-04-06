@@ -1,0 +1,15 @@
+.nav-logo {
+  &:hover {
+    text-decoration: none;
+  }
+
+  > img {
+    vertical-align: baseline;
+  }
+
+  > span {
+    font-size: 18px;
+    font-weight: 800;
+    color: $color-second;
+  }
+}

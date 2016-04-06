@@ -1,0 +1,97 @@
+.sort-region {
+  border-top: 1px solid $border-color;
+  float: left;
+  margin: 15px;
+  padding-top: 15px;
+  width: calc(100% - 30px);
+
+  &:before {
+    content: "Sort By";
+    font-size: 20px;
+  }
+
+  @include media(">=tablet", "<desktop") {
+    float: none;
+    margin: 15px auto;
+    width: 500px;
+  }
+
+  @include media(">=desktop") {
+    border-top: none;
+    border-left: 1px solid $border-color;
+    padding-left: 15px;
+    width: calc(100% - 300px);
+  }
+}
+
+.sort-option-container {
+  margin: 10px auto;
+  width: 205px;
+
+  @include media(">tablet") {
+    float: left;
+    margin: 15px;
+  }
+}
+
+.option-bezel {
+  $border-radius: 50px;
+
+  border: #ccc 1px solid;
+  border-radius: $border-radius;
+  height: 50px;
+  margin-top: 5px;
+  padding: 12px 10px 10px;
+  position: relative;
+  overflow: hidden;
+
+  > a {
+    color: $color-second;
+    display: inline-block;
+    line-height: 35px;
+    margin-top: -8px;
+    position: relative;
+    text-align: center;
+    transition: color 0.2s ease;
+    width: 58px;
+    z-index: 100;
+  }
+
+  .marker {
+    background-color: mix($color-first, #fff, 90%);
+    height: 50px;
+    position: absolute;
+    top: 0;
+    transform: translateX(52px);
+    transition: transform 0.5s ease, width 0.5s ease;
+    width: 80px;
+    border-radius: $border-radius;
+  }
+}
+
+[data-set="off"] {
+  [data-sort="off"] {
+    color: $text-color-inverse;
+  }
+}
+
+[data-set="asc"] {
+  .marker {
+    transform: translateX(-10px);
+  }
+
+  [data-sort="asc"] {
+    color: $text-color-inverse;
+  }
+}
+
+[data-set="desc"] {
+  [data-sort="desc"] {
+    color: $text-color-inverse;
+  }
+
+  .marker {
+    transform: translateX(114px);
+  }
+}
+

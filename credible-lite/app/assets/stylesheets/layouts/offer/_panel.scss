@@ -1,0 +1,8 @@
+.offer-panel-container {
+  background-color: #fff;
+  padding: 15px 0;
+
+  @include media(">=tablet") {
+    margin: 0 15px;
+  }
+}

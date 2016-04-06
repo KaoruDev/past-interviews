@@ -1,0 +1,46 @@
+<div class="headline-section clearfix">
+  <div class="pull-left monthly-payment">
+    ${{ monthly_payment}}
+  </div>
+  <div class="pull-right apr">
+    APR: {{ apr }}%
+  </div>
+</div>
+
+<p class="text-center">
+  <u>
+    <i class="fa fa-dollar"></i>
+    <strong>${{ total_cost }}</strong>
+    Total Cost
+  </u>
+</p>
+
+<p class="text-center">
+  <u>
+    <i class="fa fa-pie-chart"></i>
+    <strong>${{ total_interest }}</strong>
+    Total Interest
+  </u>
+</p>
+
+<p class="text-center">
+  <u>
+    <i class="fa fa-clock-o"></i>
+    <strong>{{ term }} months</strong>
+    Term
+  </u>
+</p>
+
+<p class="text-center">
+  <button class="btn btn-action" type="button">Apply</button>
+</p>
+
+<p class="lender-info clearfix">
+  <span class="choice-tag">
+    <i class="fa fa-star"></i> Top Offer
+  </span>
+  <span class="pull-right lender-name">
+    offer by {{ lender_name }}
+  </span>
+</p>
+

@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./styles/main.css">
+  </head>
+
+  <body>
+
+    <div class="main-container">
+      <div class="letter-frame">
+        <div class="letter-container clearfix"></div>
+      </div>
+
+      <div class="user-info clearfix">
+        <div class="user-inputs-container">
+          <input type="text" class="user-inputs">
+        </div>
+
+        <div class="user-dashboard">
+          <button type="button" class="begin-btn">Begin Game!</button>
+        </div>
+      </div>
+    </div>
+    <script type="text/templates" class="template-user-dashboard">
+      <div class="user-score user-data">Score: <%= score %></div>
+      <div class="user-lives user-data">Lives: <%= lives %></div>
+      <div class="user-data">Interval: <%= letter_interval %></div>
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="./bower_components/underscore/underscore.js"></script>
+    <script src="./bower_components/backbone/backbone.js"></script>
+    <script src="./scripts/model.js"></script>
+    <script src="./scripts/view.js"></script>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>

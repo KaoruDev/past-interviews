@@ -1,0 +1,114 @@
+.main-container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.letter-frame {
+  width: 1000px;
+  overflow: hidden;
+  height: 50px;
+  border: thin solid #000;
+  margin-bottom: 100px;
+}
+
+.letter-container {
+  font-size: 24px;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+
+
+/*USER*/
+
+.user-inputs {
+  height: 30px;
+  width: 240px;
+  margin-bottom: 50px;
+  font-size: 24px;
+}
+
+
+.user-dashboard {
+  border: 1px solid black;
+  height: 100px;
+  width: 200px;
+  padding: 20px;
+}
+
+.begin-btn {
+  width: 200px;
+  height: 100px;
+  font-size: 20px;
+}
+
+
+/*LETTERS*/
+
+.letter {
+  width: 100px;
+  height: 50px;
+  float: left;
+  text-align: right;
+  line-height: 50px;
+}
+
+.user-data {
+  font-size: 30px;
+}
+
+.user-score {
+
+}
+
+.letter[data-tick-currently-at="0"] {
+  width: 0px;
+  display: none;
+}
+
+.letter[data-tick-currently-at="1"] {
+  width: 10px;
+}
+
+.letter[data-tick-currently-at="2"] {
+  width: 20px;
+}
+
+.letter[data-tick-currently-at="3"] {
+  width: 30px;
+}
+
+.letter[data-tick-currently-at="4"] {
+  width: 40px;
+}
+
+.letter[data-tick-currently-at="5"] {
+  width: 50px;
+}
+
+.letter[data-tick-currently-at="6"] {
+  width: 60px;
+}
+
+.letter[data-tick-currently-at="7"] {
+  width: 70px;
+}
+
+.letter[data-tick-currently-at="8"] {
+  width: 80px;
+}
+
+.letter[data-tick-currently-at="9"] {
+  width: 90px;
+}
+
+.letter[data-tick-currently-at="10"] {
+  width: 100px;
+}

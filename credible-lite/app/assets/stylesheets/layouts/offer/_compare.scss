@@ -1,0 +1,45 @@
+.compare-btn-container {
+  background-color: $color-second;
+  bottom: 15px;
+  border-radius: 50%;
+  color: $text-color-inverse;
+  cursor: pointer;
+  right: 15px;
+  line-height: 80px;
+  position: fixed;
+  overflow: hidden;
+  transform: scale(0, 0);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  text-align: center;
+  height: 80px;
+  width: 80px;
+
+  &.display {
+    transform: scale(1, 1);
+
+    &:hover {
+      background-color: $color-action;
+    }
+  }
+
+  .reset-message {
+    display: none;
+  }
+
+  &.filtered {
+    .message {
+      display: none;
+    }
+
+    .reset-message {
+      display: block;
+    }
+  }
+
+  @include media(">=tablet") {
+    transform: scale(1, 1);
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+  }
+}

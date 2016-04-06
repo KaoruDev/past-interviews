@@ -1,0 +1,1 @@
+json.(lender, :id, :name, :description)

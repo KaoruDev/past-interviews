@@ -1,0 +1,27 @@
+.offer-information-container {
+  padding: 0 17px;
+
+  @include media(">=desktop") {
+    float: left;
+  }
+
+  .information-wrapper {
+    max-width: 280px;
+
+    @include media(">=desktop") {
+    }
+  }
+
+  h3 {
+    margin-bottom: 15px;
+  }
+
+  i.fa {
+    color: $color-first;
+    width: 20px;
+  }
+
+  p > strong {
+    margin-left: 20px;
+  }
+}

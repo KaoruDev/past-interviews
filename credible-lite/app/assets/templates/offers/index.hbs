@@ -1,0 +1,24 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Lender</th>
+      <th>Term</th>
+      <th>APR</th>
+      <th>Total</th>
+      <th>Total Interest</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each offers}}
+      <tr>
+        <td>{{id}}</td>
+        <td>{{product_id}}</td>
+        <td>{{term}}</td>
+        <td>{{apr}}</td>
+        <td>{{total_cost}}</td>
+        <td>{{total_interest}}</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

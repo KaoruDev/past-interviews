@@ -1,0 +1,1 @@
+json.(offer, :id, :submission_id, :product_id, :apr, :term, :total_cost, :total_interest, :monthly_payment)

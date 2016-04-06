@@ -1,0 +1,15 @@
+{
+  "undef": true,
+  "unused": true,
+  "browser": true,
+  "mocha": true,
+  "node": true,
+  "esnext": true,
+  "predef": {
+    "expect": true,
+    "CredibleLite": true,
+    "HandlebarsTemplates": true,
+    "Mn": true
+  }
+}
+
