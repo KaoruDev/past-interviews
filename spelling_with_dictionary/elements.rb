@@ -13,7 +13,7 @@ def is_correct(str, map={})
   end
 
   if ELMS.include? str[0..1]
-    return map[str[2..-1]] = is_correct(str[2..-1], map)
+    return is_correct(str[2..-1], map)
   end
 
   false
