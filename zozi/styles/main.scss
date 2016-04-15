@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-content;
+}
+
+$height: 500px;
+$width : 500px;
+
+.outter-container {
+  border: black 1px solid;
+  height: $height;
+  margin: 0 auto;
+  position: relative;
+  width: $width;
+}
+
+.highlight-container {
+  background: blue;
+  bottom: 0;
+  height: $height / 2;
+  right: 0;
+  width: $width / 2;
+}
+
+header {
+  background: red;
+  height: $height / 4;
+  line-height: $width / 4;
+  right: ($width / 4) - (($width / 4) / 2);
+  width: $width / 4;
+}
+
+.square-position {
+  position: absolute;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  $margin_in_between: 50px;
+
+  .outter-container {
+    margin-top: 500px;
+  }
+
+  .highlight-container {
+    right: 135px;
+    top: -300px;
+  }
+
+  header {
+    top: -200px;
+  }
+}
